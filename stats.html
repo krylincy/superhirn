@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+ 
+<title>Megamind</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body class="stats">
+ <div class="toolbar">
+ <a href="index.html" class="goBack"></a> 
+	<p class="points">
+		<span>0</span>
+	</p>
+	<p class="energy-bar">
+		<span>0</span>
+	</p>	
+ </div>
+ <div class="content">
+ <h2>Fortschritt</h2>
+
+  <p><strong>Spiel</strong></p>
+ <p class="level">Level: <span>0</span></p>
+ <p class="levelProgress">Erfahrung: <span>0</span></p>
+ <p class="levelNextFeature">Nächstes Feature mit Level: <span>0</span></p>
+ 
+ 
+ <p><strong>Statistik</strong></p>
+ <p class="statWon">Runden gewonnen: <span>0</span></p>
+ <p class="statSum">Runden insgesamt: <span>0</span></p>
+ <p class="statPercent">Gewinnquote: <span>0</span></p>
+ <p class="pointsSum">Graue Zellen erspielt: <span>0<span></p>
+
+
+ </div>
+<script type="text/javascript" src="js/cordova.js"></script>
+<script type="text/javascript" src="js/cordova_plugins.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+<script type="text/javascript">
+(function(){
+	Shirn.Views.stats();
+})()
+</script>
+<div class="hidden">
+	<script type="text/javascript">
+		Shirn.Basics.preloadImages();
+	</script>
+</div>
+</body>
+</html>

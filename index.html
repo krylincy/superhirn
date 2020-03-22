@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+ 
+<title>Megamind</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body class="index">
+
+ <div class="toolbar">	
+	<p class="points">
+		<span>0</span>
+	</p>
+	<p class="energy-bar">
+		<span>0</span>
+		
+	</p>
+ </div>
+ <div class="content">
+	<div class="levelOverview">
+		<p class="level"><span>0</span></p>
+		<p class="levelProgress"><span>0</span></p>
+	</div>
+  <p class="button game"><a href="#">Spiel starten <span>(+ 0 EXP)</span></a>
+ 
+  <select class="selectCells" data-keyname="cells">
+	<option value="4">4 Positionen</option>
+	<option value="5">5 Positionen</option>
+	<option value="6">6 Positionen</option>
+  </select>
+  <select class="selectColors" data-keyname="colors">
+	<option value="4">4 Farben</option>
+	<option value="5">5 Farben</option>
+	<option value="6">6 Farben</option>
+	<option value="7">7 Farben</option>
+	<option value="8">8 Farben</option>
+  </select>
+   
+  </p>
+  
+ <p class="button shop"><a href="shop.html">Shop</a></p>
+ <p class="button statistik"><a href="stats.html">Fortschritt</a></p>
+ <p class="additional">
+	 <a href="intro.html">Intro</a>
+	 <a href="#" class="reset">Reset</a>
+	 <a href="impressum.html">Impressum</a>
+ </p>
+ 
+ </div>
+ <div class="overlay" id="reset">
+	<div class="header">Reset</div>
+	<div class="content">
+		<p>Willst du wirklich deinen Spielstand löschen und erneut beginnen?</p>
+		<a href="#" class="confirm">Ja</a>
+		<a href="#" class="cancel">Nein</a>
+	</div>
+ </div>
+  <div class="overlay" id="openShop">
+	<div class="header">Zu wenig Energie</div>
+	<div class="content">
+		<p>Besuch den Shop und fülle deine Energie auf, so kannst du kein neues Spiel starten.</p>
+		<a href="#" class="confirm fullsize">zum Shop</a>
+	</div>
+ </div>
+ <div class="overlay-background"></div>
+<script type="text/javascript" src="js/cordova.js"></script>
+<script type="text/javascript" src="js/cordova_plugins.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/application.js"></script>
+ <script type="text/javascript">
+(function(){
+	Shirn.Views.start();
+})()
+</script>
+<div class="hidden">
+	<script type="text/javascript">
+		Shirn.Basics.preloadImages();
+	</script>
+</div>
+</body>
+</html>
